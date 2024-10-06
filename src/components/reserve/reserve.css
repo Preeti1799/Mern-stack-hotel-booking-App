@@ -1,0 +1,126 @@
+/* Reserve modal container */
+.reserve {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background */
+    z-index: 1000;
+  }
+  
+  /* Reserve content box */
+  .rContainer {
+    width: 500px;
+    max-height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Allows scrolling when content exceeds the height */
+    position: relative;
+  }
+  
+  /* Close button styling */
+  .rClose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #ff4d4f;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .rClose:hover {
+    color: #ff7875;
+  }
+  
+  /* Title and description */
+  .rTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .rDesc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Room item styling */
+  .rItem {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rItem:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Max people and price */
+  .rMax {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .rPrice {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3c9c2c;
+    margin-top: 10px;
+  }
+  
+  /* Room checkbox and number */
+  .room {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .room label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .room input {
+    margin-left: 10px;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  /* Button for room reservation */
+  .rButton {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #3c9c2c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rButton:hover {
+    background-color: #2f7c22;
+  }
+  
+  /* Add some responsiveness */
+  @media (max-width: 600px) {
+    .rContainer {
+      width: 90%;
+    }
+  }
+  

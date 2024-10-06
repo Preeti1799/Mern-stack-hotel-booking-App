@@ -4,43 +4,109 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  background-image: url("https://unsplash.com/photos/3d-render-of-luxury-hotel-lobby-and-reception-9-c8r-BVPTM");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.fpItem1 {
+  background-image: url('hot5.webp');
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Ensure a consistent height */
 }
 
-.fpItem{
+.fpItem2 {
+  background-image: url('hot\ 8.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.fpItem3 {
+  background-image: url('hot\ 6.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.fpItem4 {
+  background-image: url('hot7.webp');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+
+.fpItem {
   flex: 1;
   gap: 10px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s;
+ 
 }
 
-.fpImg{
+.fpItem:hover {
+  transform: scale(1.05);
+}
+
+.fpImg {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
-.fpName{
-  color: #333;
-  font-weight: bold;
+.fpItem {
+  position: relative;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  flex: 1;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-end;
 }
 
-.fpCity{
-  font-weight: 300;
+.fpImg {
+  width: 100%;
+  height: 70%; 
+  object-fit: cover;
 }
 
-.fpPrice{
-  font-weight: 500;
+.fpName,
+.fpCity,
+.fpPrice {
+  margin: 5px 10px; 
+  font-weight: bold; /* Ensure the text is bold */
+  letter-spacing: 0.5px; /* Increase letter spacing */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for scaling and color change */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
 }
 
-.fpRating>button{
+.fpName:hover,
+.fpCity:hover,
+.fpPrice:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  color: #003580; /* Change color on hover */
+}
+
+
+
+.fpRating > button {
   background-color: #003580;
   color: white;
   border: none;
   padding: 3px;
   margin-right: 10px;
   font-weight: bold;
+  border-radius: 4px;
 }
 
-.fpRating>span{
+.fpRating > span {
   font-size: 14px;
 }

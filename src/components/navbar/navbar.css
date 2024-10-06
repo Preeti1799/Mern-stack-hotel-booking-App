@@ -16,6 +16,9 @@
 
 .logo{
   font-weight: 500;
+  font-size: 40px;
+  color:#97cba9;
+  font-style: italic;
 }
 
 .navButton{

@@ -1,0 +1,3 @@
+[submodule "client App"]
+    path = client App
+    url = https://github.com/Preeti1799/client-app-repo.git
